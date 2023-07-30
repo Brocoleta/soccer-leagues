@@ -40,7 +40,7 @@ with DAG('SOCCER_LEAGUES',
          default_args=default_arguments,
          description='Extracting Data SOCCER League' ,
          start_date = datetime(2022, 9, 21),
-         schedule_interval = None,
+         schedule_interval = "0 12 * * 1",
          tags=['tabla_espn'],
          catchup=False) as dag :
 
